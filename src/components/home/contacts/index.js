@@ -4,9 +4,6 @@ import ForumRoundedIcon from '@mui/icons-material/ForumRounded';
 
 const Contacts = () => {
     
-  const viewHndlr = () => {
-      setView(!view)      
-  }
     const Hndlr = (type) => {
         if (type === 'call') {
             alert('CALL ME PLEASE! ❤')

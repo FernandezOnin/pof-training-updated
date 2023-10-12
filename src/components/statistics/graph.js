@@ -25,21 +25,17 @@ export const options = {
       legend: {
         position: 'top',
       },
-      title: {
-        display: true,
-        text: 'Chart.js Bar Chart',
-      },
     },
   };
   
   const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   
-export const data = {
+export const datas = {
     labels,
     datasets: [
       {
-        label: 'Dataset 1',
-        data: [1, 2, 3, 4, 5, 6, 7],
+        label: 'Cases',
+        data: [2, 3, 2.5, 5, 4, 5, 7],
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
     ],
@@ -51,7 +47,7 @@ const Graph = () => {
         <div className="graph">
             <div>
                 Daily New Cases
-                <Bar options={options} data={data} />
+                <Bar options={options} data={datas} height={50} width={80} style={{marginBottom:'50px', marginRight: '10px'}}/>
             </div>
         </div>
     )
